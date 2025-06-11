@@ -65,8 +65,13 @@ public class MovePlayer : MonoBehaviour
         xRot += mouseX * rotSpeed * Time.deltaTime;
         yRot += mouseY * rotSpeed * Time.deltaTime;
 
+<<<<<<< HEAD
         // -90 ~ 90로 각도 고정
         yRot = Mathf.Clamp( yRot, -90, 90 );
+=======
+        // -90 ~ 90
+        yRot = Mathf.Clamp(yRot, -90, 90);
+>>>>>>> 164c70c5c0df57e743896c2bd96e2781490c59dc
 
         transform.rotation = Quaternion.Euler(-yRot, xRot, 0);
     }
